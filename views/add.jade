@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1= title
+    div.newsiswa
+        form( method="post")
+            div
+                div
+                    span.label Firstname :
+                    input(type="text", name="name")
+                div
+                    span.label Lastname :
+                    input(type="text", name="alamat")
+                div#editEmployeeSubmit
+                    input(type="submit", value="Save")
+        a(href="/author")!= "Back to Author List"
